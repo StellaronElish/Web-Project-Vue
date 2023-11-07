@@ -8,25 +8,45 @@
                     </router-link>
                 </div>
                 <div>
-                    <h1 class="m0">Detail User</h1>
-                    <p class="mt5 mb20 tc-green">Your user details</p>
+                    <h1 class="m0">Detail Plannogram</h1>
+                    <p class="mt5 mb20 tc-green">Your plannogram details</p>
                 </div>
             </div>
             <hr class="uline-grey">
             <div class="mt50">
-                <p>Name:</p>
+                <p>Plannogram Name</p>
                 <h2>Vioni Wita Elya</h2>
             </div>
-            <div class="mt10">
-                <p class="detail-title-bold">Username:</p>
+            <div class="mt10 flex">
+                <p class="detail-title-bold">Broadcast Schedule : </p>
                 <p>viowelya</p>
             </div>
-            <div class="mt10">
-                <p class="detail-title-bold">Email:</p>
-                <p>vioniwitaelya@gmail.com</p>
+            <div class ="plano-until">
+                <div >
+                    <p class="detail-title-bold">Plannogram Status</p>
+                    <hr class="uline-grey">
+
+                    <label class="label-green">Super Admin</label>
+                </div>
+                <div>
+                    <p class="detail-title-bold">Valid From</p>
+                    <hr class="uline-grey">
+
+                    <label class="label-green">Super Admin</label>
+                </div>
+                <div>
+                    <p class="detail-title-bold">Valid Until</p>
+                    <hr class="uline-grey">
+
+                    <label class="label-green">Super Admin</label>
+                </div>
             </div>
             <div>
-                <p class="detail-title-bold">Roles</p>
+                <p class="detail-title-bold">Valid Until</p>
+                <label class="label-green">Super Admin</label>
+            </div>
+            <div>
+                <p class="detail-title-bold">List Product</p>
                 <label class="label-green">Super Admin</label>
             </div>
         </div>

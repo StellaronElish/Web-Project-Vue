@@ -136,6 +136,7 @@ td {
     background-repeat: no-repeat;
     background-size: 25px;
     margin-left: auto;
+    cursor: pointer
 }
 
 .form-select {
@@ -152,7 +153,7 @@ td {
 
 .label-green {
     background-color: #A7F3DD; 
-    padding: 10px 20px; 
+    padding: 10px 33px; 
     border-radius: 5px; 
     font-size: 14px; 
     color: #014935; 
@@ -175,4 +176,13 @@ td {
     font-size: 14px; 
     color: #014935; 
     font-weight: 500;
+}
+
+.plano-until {
+    display: flex;
+    gap: 50px;
+}
+
+.flex {
+    display: flex;
 }
