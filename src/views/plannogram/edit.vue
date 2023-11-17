@@ -93,6 +93,6 @@
 
 <script>
 export default {
-	name: 'detail-plannogram'
+	name: 'edit-plannogram'
 }
 </script>

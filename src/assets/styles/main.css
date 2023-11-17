@@ -112,9 +112,6 @@ th {
 }
   
 td {
-    /* border: 1px solid #ddd;
-    padding: 8px; */
-  
     border-bottom: 1px solid #ddd; /* Add a solid black line under table headers */
     text-align: cnter;
     padding: 20px 0px;
@@ -183,6 +180,31 @@ td {
     gap: 50px;
 }
 
+.form-gambar{
+    /* padding: 30px 1%; */
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.custom-input-label {
+    background: url("https://img.icons8.com/fluency/48/add-image.png");
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    height: 110px;
+    width: 110px;
+    overflow: hidden;
+  }
+
 .flex {
     display: flex;
+}
+
+.mt5 {
+    cursor: pointer;
 }

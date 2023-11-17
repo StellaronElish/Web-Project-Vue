@@ -17,9 +17,14 @@
                 <div class="w20">
                     <label class="form-label">Background Image</label>
                 </div>
-                <div class="w80">
-                    <img src="https://i.ytimg.com/vi/EQU8rg5koYE/sddefault.jpg">
-                </div>
+                <label for="imageInput" class="custom-input-label">
+                    <input
+                    id="imageInput"
+                    accept="image/*"
+                    class="form-gambar"
+                    type="file"
+                    />
+                </label>
             </div>
             <div class="mt50 row">
                 <div class="w20">
@@ -30,6 +35,7 @@
                         class="form-text"
                         type="text"
                         placeholder="Masukkan Plannogram Name"
+                        v-model="inputValue"
                     >
                 </div>
             </div>
@@ -42,6 +48,7 @@
                         class="form-text"
                         type="text"
                         placeholder="Pilih hari"
+                        v-model="inputHari"
                     >
                 </div>
             </div>
@@ -54,6 +61,7 @@
                         class="form-text"
                         type="text"
                         placeholder="Masukkan Tanggal"
+                        v-model="inputValidFrom"
                     >
                 </div>
             </div>
@@ -66,6 +74,7 @@
                         class="form-text"
                         type="text"
                         placeholder="Masukkan Tanggal"
+                        v-model="inputValidUntil"
                     >
                 </div>
             </div>
@@ -84,7 +93,7 @@
             </div>
             <div class="flex mt30">
                 <router-link to="/list-plannogram">
-                    <button class="bt-submit-green">Add Plannogram</button>
+                    <button class="bt-submit-green"  @click="$emit('myEvent', inputValue, inputHari, inputValidFrom, inputValidUntil), print()">Add Plannogram</button>
                 </router-link>
             </div>
         </div>
@@ -93,6 +102,27 @@
 
 <script>
 export default {
-	name: 'detail-plannogram'
+	name: 'add-plannogram',
+    data() {
+    return {
+      inputValue: '', // Properti untuk menyimpan nilai input
+      inputHari: '',
+      inputValidFrom: '',
+      inputValidUntil: '',
+    };
+  },
+  methods: {
+    addPlannogram() {
+        console.log(this.inputValue);
+        this.$root.$emit("addPlannogram", this.inputValue);
+        this.inputValue = '';
+    },
+    print() {
+        console.log(this.inputValue + " " + this.inputHari + " " + this.inputValidFrom + " " + this.inputValidUntil);
+
+    }
+
+  }
+  
 }
 </script>

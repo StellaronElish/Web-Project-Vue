@@ -1,6 +1,7 @@
 /* margin and width */
 .w20{
     width: 20%;
+    height: 50px;
 }
 .w25{
     width: 25%;
@@ -180,3 +181,5 @@
 .right{
     text-align: right;
 }
+
+/* by Rafly and umam /*
